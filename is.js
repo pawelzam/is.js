@@ -533,7 +533,7 @@
 
         // is current browser chrome?
         is.chrome = function() {
-            return /chrome|chromium/i.test(userAgent) && /google inc/.test(vendor);
+            return /chrome|chromium/i.test(userAgent) && /opr/.test(userAgent) == false && /google inc/.test(vendor);
         };
         // chrome method does not support 'all' and 'any' interfaces
         is.chrome.api = ['not'];
